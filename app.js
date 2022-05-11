@@ -20,11 +20,11 @@ app.get('/',function(req,res){
     res.render('home/index'); 
 });
 
-
+//Rota Notícias
 app.get('/noticias',function(req,res){
-    res.render('noticias/noticias')
+    res.render('noticias/noticias');
 })
 
 app.listen(3000,()=>{
-    console.log('Servidor rodando com express')
+    console.log('Servidor rodando com express');
 })
