@@ -6,7 +6,7 @@
 //npm install ejs
 
     const app = require('./config/server')
-    const noticias = require('./mockup')
+    const noticias = require('./mockup') //require do mockup com json dentro
 
 // rota home
 app.get('/',function(req,res){
@@ -16,7 +16,7 @@ app.get('/',function(req,res){
 
 //Rota Notícias
 app.get('/noticias',function(req,res){
-    res.render('noticias/noticias');
+    res.render('noticias/noticias',{noticias: noticias}); //além do arquivo ejs ('noticias/noticias'), será passada uma variável com o conteúdo do arquivo mockup para que possamos trabalhar com esses valores na página
 })
 
 //Rota Admin, adicionar Notícias
