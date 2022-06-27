@@ -18,6 +18,11 @@ app.get('/noticias',function(req,res){
     res.render('noticias/noticias');
 })
 
+//Rota Admin, adicionar Notícias
+app.get('/admin',function(req,res){
+    res.render('admin/form_add_noticias')
+})
+
 app.listen(3000,()=>{
     console.log('Servidor rodando com express');
 })
