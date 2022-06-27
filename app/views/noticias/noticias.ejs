@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Tecnologia</title>
-</head>
-<body>
-    <a href="/">Home</a>
-            <h1>Todas as Notícias</h1>
-            <ul>
-                <li><a href="#">Servidor NODE.JS com Express</li>    
-                <li><a href="#">NODEMON melhora a performance do desenvolvedor NODE.JS</li>    
-            </ul>
-</body>
-</html>
+<%- include('../common/header') %>
+    <%- include('../common/menu')%>
+    <main class="mb-4">
+        <div class="bg-light p-5 mb-4">
+            <div class="container text-center">
+                <h1>Notícias</h1>
+                <p class="lead">
+                    Fique Por dentro da s últimas notícias do mundo da tecnologia
+                </p>
+            </div>
+        </div>
+    </main>
+<%- include('../common/footer')%>
