@@ -6,6 +6,7 @@
 //npm install ejs
 
     const app = require('./config/server')
+    const noticias = require('./mockup')
 
 // rota home
 app.get('/',function(req,res){
