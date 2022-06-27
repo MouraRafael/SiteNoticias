@@ -11,7 +11,7 @@
 // rota home
 app.get('/',function(req,res){
     // o O EJS disponibiliza o método render para usar nas respostas das requi
-    res.render('home/index'); 
+    res.render('home/index',{noticias: noticias.slice(0,3)}); // Para mostrar apenas as três primeiras notícias, começando daqulea de id 2
 });
 
 //Rota Notícias
